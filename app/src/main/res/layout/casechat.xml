@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".casechat">
+
+    <ImageView
+        android:id="@+id/option"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:contentDescription="@string/option"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/dot_" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="177dp"
+        android:layout_height="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="all recipient"
+        android:textColor="#F5F5F5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/thecase"
+        android:layout_width="137dp"
+        android:layout_height="18dp"
+        android:text="@string/the_case_name_goes_here"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/captions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234 - 5678"
+        android:textColor="#487CF0"
+        android:textColorHighlight="#3359A3"
+        android:textColorHint="#3359A3"
+        android:textColorLink="#3359A3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="433dp"
+        android:layout_height="61dp"
+        android:background="#B1B1B1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="378dp"
+            android:layout_marginRight="378dp"
+            android:layout_marginBottom="7dp"
+            android:contentDescription="@string/add"
+            android:scrollbarThumbHorizontal="@android:color/darker_gray"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbarTrackHorizontal="@android:color/darker_gray"
+            android:scrollbarTrackVertical="@android:color/darker_gray"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="6dp"
+            android:contentDescription="@string/send"
+            android:scrollbarThumbHorizontal="@android:color/darker_gray"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbarTrackHorizontal="@android:color/darker_gray"
+            android:scrollbarTrackVertical="@android:color/darker_gray"
+            app:srcCompat="@drawable/msg" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_background">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="55dp"
+        android:layout_height="68dp"
+        android:text="@string/back"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@android:color/darker_gray"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/down"
+        android:layout_width="35dp"
+        android:layout_height="21dp"
+        android:contentDescription="@string/down"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/arrow" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:background="@color/design_default_color_background"
+        android:hint="message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
